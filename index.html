@@ -13,8 +13,9 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        
         <div class="food" style="display: flex;">
-            <div id="navbar">
+            <div id="navbar"  class="closed">
                 <div class="profiles"> <img src="./Image/javanese.png"
                         alt="profile"></div>
                 <div id="profile-name">Your Restaurant Menu </div>
@@ -40,7 +41,7 @@
 
             <div class="right-window" style="background-color: black; width: 1700px;">
                 <div class="top-right-window" style="margin-left: 20px;">
-                    <div class="nav">
+                    <div class="nav"><button id="toggleNavbarBtn">≡</button>
                         <div class="search">
                             <label for="input"><i class="fa-solid fa-search"></i></label>
                             <input type="text" id="input"
@@ -64,7 +65,7 @@
 
                     </div>
                 </div>
-                <div id="container" class="flex" style="margin-left: 20px;">
+                <div id="container" class="flex">
 
                 </div>
             </div>
