@@ -23,18 +23,17 @@ function getMenu() {
             <img src="${ele.imgSrc}" alt="${ele.name}">
         </div>
         <div class="bottom flex">
-            <div>
+            <div class = "text">
                 <h3>${ele.name}</h3>
                 <p>$${ele.price} /-<p>
 
             </div>
             <div class="add" onclick="add(${card.id})">
-            <i class="fa-solid fa-plus"></i>
+            <div class= "plus"><i class="fa-solid fa-plus"></i></div>
             </div>
         </div>
-            `
-
-                container.appendChild(card);
+            ` 
+            container.appendChild(card);
 
             });
         })
@@ -154,3 +153,16 @@ menu.addEventListener('click', (e) => {
         })
 
 })
+
+
+
+
+
+
+//toggle button 
+$(document).ready(function () {
+    // Toggle the navbar when the button is clicked
+    $("#toggleNavbarBtn").click(function () {
+        $("#navbar").toggle();
+    });
+});
